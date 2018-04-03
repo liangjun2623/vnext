@@ -12,7 +12,7 @@
   <script type="text/javascript" src="../assets/js/jquery.min.js" ></script>
   <script type="text/javascript" src="../assets/js/util.js" ></script>
 </head>
-<body style="padding-left: 54px; padding-right: 54px;" class="  mobile pace-done">
+<body class="pace-done">
 <div class="pace  pace-inactive">
   <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
     <div class="pace-progress-inner"></div>
@@ -29,30 +29,35 @@
           <div class="logotextbox">
             <img src="../assets/images/eInWeCrypto-logo.png" alt=""></div>
         </div>
-        <div class="eright">
+        
+        <div class="eright mView">
+          <div onClick="location.href='../zh/index.html'">中文</div>
+          <div>|</div>
+          <div onClick="location.href='../en/index.html'">EN</div>
+        </div>
+        
+        <div class="eright pcView">
           <div>联系我们</div>
           <div class="langChange">语言
             <span class="langBox">
-              <p>ENGLISH</p>
-              <p>中文</p>
+              <p onClick="location.href='../zh/index.html'">ENGLISH</p>
+              <p onClick="location.href='../en/index.html'">中文</p>
             </span>
           </div>
         </div>
+        
       </div>
       <div class="bgimgBox">
-        <img src="../assets/images/ebg_1.png" alt=""></div>
+        <img class="mView" src="../assets/images/ebg_2.png" alt="" />
+        <img class="pcView" src="../assets/images/ebg_1.png" alt="" />
+      </div>
       <div class="inweTextImg">
         <img src="../assets/images/einwecrypto.png" alt=""></div>
         
-        
-        
-      <div class="inweTitle entouch mView">
+      <div class="inweTitle mView">
         <p class="txt1">知情决策，态度投资</p>
         <p class="txt2">In Crypto We Trust.</p>
-        <!--<div class="downloadBtn">
-          <a href="#/download">进入下载页面</a></div>-->
       </div>
-        
         
       <div class="inweTitle pcView">
         <p class="txt1">知情决策，态度投资</p>
@@ -60,12 +65,6 @@
         <div class="downloadBtn">
           <a href="#/download">进入下载页面</a></div>
       </div>
-      
-      
-      
-      
-      
-      
       
       <div class="phoneImgBox showFlowBox showTogger">
         <img src="../assets/images/eback.png" alt=""></div>
@@ -113,7 +112,7 @@
             <img src="../assets/images/eicon16.png" alt=""></div>
         </div>
         
-        <div className="downloadBtn showFlowBox mView">
+        <div class="downloadBtn showFlowBox mView">
             <a href="download.html">进入下载页面</a>
         </div>
         

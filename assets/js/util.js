@@ -348,13 +348,11 @@ const isWeiXin = () => {
 $(function(){
 	
 	if (IsTouchDevice) {
-		let body = document.getElementsByTagName("body")[0];
-		$(body).addClass("mobile");
+		$("body").addClass("mobile");
 		$(".mView").show();
 		$(".pcView").hide();
 	} else {
-		let body = document.getElementsByTagName("body")[0];
-		$(body).addClass("pc");
+		$("body").addClass("pc");
 	}
 	
 	window.addEventListener("orientationchange", function(event) {
