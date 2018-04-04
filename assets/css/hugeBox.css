@@ -39,7 +39,7 @@ body,html {
 	top:0;
 	z-index:10;
 	width:100%;
-	height:.72rem;
+	height:.6rem;
 	display:-webkit-box;
 	display:-webkit-flex;
 	display:-ms-flexbox;
@@ -61,20 +61,19 @@ body,html {
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-align:end;
-	-webkit-align-items:flex-end;
+	-webkit-align-items:center;
 	-ms-flex-align:end;
-	align-items:flex-end;
+	align-items:center;
 }
 .e-hugeBox .headerBox .navBox .eleft .logobox {
-	width:.53rem;
-	height:.34rem;
+	width:.42rem;
+	height:.42rem;
 }
 .e-hugeBox .headerBox .navBox .eleft .logotextbox {
 	position:relative;
-	top:.06rem;
-	margin-left:.13rem;
-	width:1.49rem;
-	height:.25rem;
+  margin-left: .20rem;
+  width: 1.84rem;
+  height: .23rem;
 }
 .e-hugeBox .headerBox .navBox .eright {
 	margin-right:2.19rem;
@@ -84,11 +83,11 @@ body,html {
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-align:end;
-	-webkit-align-items:flex-end;
+	-webkit-align-items:center;
 	-ms-flex-align:end;
-	align-items:flex-end;
+	align-items:center;
 	color:#fff;
-	font-size:.2rem;
+	font-size:.18rem;
 	font-family:"beatles";
 }
 .e-hugeBox .headerBox .navBox .eright div {
@@ -118,6 +117,7 @@ body,html {
 }
 .e-hugeBox .headerBox .bgimgBox {
 	width:100%;
+  background: #2E2E2E;
 }
 .e-hugeBox .headerBox .inweTextImg {
 	position:absolute;
