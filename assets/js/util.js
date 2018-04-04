@@ -355,6 +355,15 @@ $(function(){
 		$("body").addClass("pc");
 	}
 	
+	/*菜单*/
+	$(".navBox .closeMenu").bind("click",function(){
+		$(".navBox .sub").removeClass("active");
+	})
+	$(".navBox .openMenu").bind("click",function(){
+		$(".navBox .sub").addClass("active");
+	})
+	
+	
 	window.addEventListener("orientationchange", function(event) {
 	    if (window.orientation == 180 || window.orientation == 0) {
 	        var dw = document.body.clientWidth;
