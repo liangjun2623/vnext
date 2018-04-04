@@ -33,95 +33,28 @@ body,html {
 	width:100%;
 	height:auto;
 }
-.e-hugeBox .headerBox .navBox {
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:20;
-	width:100%;
-	height:.6rem;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-pack:justify;
-	-webkit-justify-content:space-between;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
-	-webkit-box-align:end;
-	-webkit-align-items:flex-end;
-	-ms-flex-align:end;
-	align-items:flex-end;
-}
-.e-hugeBox .headerBox .navBox .eleft {
-	margin-left:2.17rem;
-	height:100%;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:end;
-	-webkit-align-items:center;
-	-ms-flex-align:end;
-	align-items:center;
-}
-.e-hugeBox .headerBox .navBox .eleft .logobox {
-	width:.42rem;
-	height:.42rem;
-}
-.e-hugeBox .headerBox .navBox .eleft .logotextbox {
-	position:relative;
-  margin-left: .20rem;
-  width: 1.84rem;
-  height: .23rem;
-}
-.e-hugeBox .headerBox .navBox .eright {
-	margin-right:2.19rem;
-	height:100%;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:end;
-	-webkit-align-items:center;
-	-ms-flex-align:end;
-	align-items:center;
-	color:#fff;
-	font-size:.18rem;
-	font-family:"beatles";
-}
-.e-hugeBox .headerBox .navBox .eright div {
-	margin-left:.95rem;
-	cursor:pointer;
-	font-family:"beatles";
-	letter-spacing:.15em;
-	font-weight:200;
-}
-.e-hugeBox .headerBox .navBox .eright div:hover{
-	color: #009857;
-}
-.e-hugeBox .headerBox .navBox .eright div.active{
-	color: #009857;
-}
-.e-hugeBox .headerBox .navBox .eright div.langChange {
-	position:relative;
-}
-.e-hugeBox .headerBox .navBox .eright div.langChange .langBox {
-	display:none;
-	text-align:center;
-	position:absolute;
-	width:100%;
-}
-.e-hugeBox .headerBox .navBox .eright div.langChange .langBox p {
-	margin-top:.12rem;
+/*导航栏覆盖*/
+.e-hugeBox .headerBox .navBox .eright{
 	color:#fff;
 }
-.e-hugeBox .headerBox .navBox .eright div.langChange .langBox p:hover {
-	color:#008f2e;
+.e-hugeBox .headerBox .navBox .eleft .logotextbox .black{
+	display: none;
 }
-.e-hugeBox .headerBox .navBox .eright div.langChange:hover .langBox {
-	display:block;
+.e-hugeBox .headerBox .navBox .eleft .logotextbox .white{
+	display: block;
 }
+/*
+.e-hugeBox 
+.e-hugeBox 
+.e-hugeBox 
+.e-hugeBox */
+
+
+
+
+
+
+
 .e-hugeBox .headerBox .bgimgBox {
 	width:100%;
   background: #2E2E2E;
@@ -345,6 +278,9 @@ body,html {
 	padding-bottom:1.3rem;
 	background-color:#f9f9f9;
 }
+.mobile .e-hugeBox .intrduceBox{
+	background: #f9f9f9 url(../images/bg_home_01.png) no-repeat bottom left / 2.6rem auto;
+}
 .e-hugeBox .intrduceBox .bgImgLeft {
 	position:absolute;
 	top:2.26rem;
@@ -439,183 +375,10 @@ body,html {
 }
 
 
-/*footer*/
-.e-hugeBox .contactBox {
-	background:#fff;
-	width:100%;
-	padding: 0.23rem 2.2rem;
-	box-sizing: border-box;
-	height: 0.8rem;
-}
-.e-hugeBox .contactBox .ct{
-	float: right;
-	line-height: 0.34rem;
-}
-.e-hugeBox .contactBox .logo{
-	float: left;
-	height: 0.34rem;
-	width: 0.3rem;
-}
-.e-hugeBox .contactBox .footerText{
-	float: right;
-	margin: 0;
-	color: #333333;
-	font-size: 0.14rem;
-	margin-right: 1.4rem;
-}
-.e-hugeBox .contactBox .iconBox{
-	margin: 0;
-	float: right;
-}
-.e-hugeBox .contactBox .iconBox li {
-	display: inline-block;
-	float: left;
-	position:relative;
-	padding-left: 0.4rem;
-	cursor:pointer;
-	color: #898989;
-}
-.e-hugeBox .contactBox .iconBox li a{
-	color: #898989;
-}
-.e-hugeBox .contactBox .iconBox li:hover a{
-	color: #009857;
-}
-.e-hugeBox .contactBox .iconBox li img {
-	object-fit:contain;
-}
-.e-hugeBox .contactBox .iconBox li.airportIcon .airportQrcode {
-	display:none;
-	opacity:0;
-	position:absolute;
-	top:-1.84rem;
-	left:50%;
-	z-index:10;
-	-webkit-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	transform:translateX(-50%);
-	width:1.64rem;
-	height:1.64rem;
-	box-sizing:border-box;
-	padding:.07rem;
-	background:#fff;
-	box-shadow:0 0 10px rgba(0,0,0,0.15);
-	-webkit-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out;
-}
-.e-hugeBox .contactBox .iconBox li.airportIcon:hover .airportQrcode {
-	display:block;
-	opacity:1;
-}
-.mobile .e-hugeBox .contactBox{
-    width: 100%;
-    box-sizing: border-box;
-    height: 1.4rem;
-    padding: 0;
-}
-.mobile .e-hugeBox .contactBox .logo{
-	display: none;
-}
-.mobile .e-hugeBox .contactBox .iconBox{
-	float: none;
-	width: 100%;
-}
-.mobile .e-hugeBox .contactBox .ct{
-	float: none;
-	width: 100%;
-	padding: 0.1rem 0 0.2rem;
-}
-.mobile .e-hugeBox .contactBox .iconBox li{
-	width: 16.6%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	line-height: 0.6rem;
-}
-.mobile .e-hugeBox .contactBox .footerText {
-    float: none;
-    margin: 0;
-    text-align: center;
-    line-height: 0.5rem;
-    color: #898989;
-}
 
 
 
-/*导航栏！！！！*/
-.mobile .e-hugeBox .headerBox .navBox{
-	height: 0.9rem;
-}
-.mobile #e-hugeBox .headerBox {
-	height:auto;
-}
-.mobile #e-hugeBox .headerBox .eleft {
-	margin-left:0.3rem;
-}
-.mobile #e-hugeBox .headerBox .eright {
-	margin-right:0.3rem;
-	font-size:.2rem;
-	font-weight:200;
-	line-height:.2rem;
-	height: 100%;
-}
-.mobile #e-hugeBox .headerBox .eright span{
-	height: 100%;
-  align-items: center;
-  display: flex;
-}
-.mobile #e-hugeBox .headerBox .eright img{
-	height: 0.34rem;
-	width: 0.48rem;
-}
-.mobile #e-hugeBox .headerBox .eright .sub{
-	display: none;
-}
-.mobile #e-hugeBox .headerBox .sub.active{
-	display: block;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: #ffffff;
-	margin: 0;
-	padding: 0;
-	z-index: 9999;
-	animation:subMenu 0.2s;
-}
-@keyframes subMenu{
-	from{opacity: 0;}
-	to{opacity: 1;}
-}
 
-
-.mobile #e-hugeBox .headerBox .sub span{
-	position: absolute;
-	right: 0.4rem;
-	top: 0.4rem;
-	height: 0.4rem;
-	width: 0.4rem;
-	display: block;
-}
-.mobile #e-hugeBox .headerBox .sub span img{
-	height: 100%;
-	width: 100%;
-}
-.mobile #e-hugeBox .headerBox .sub ul{
-	width: 100%;
-	height: 100%;
-	padding-top: 2.9rem;
-	box-sizing: border-box;
-}
-.mobile #e-hugeBox .headerBox .sub ul li{
-	text-align: center;
-	padding: 0.4rem 0;
-	font-size:0.40rem;
-	font-family:"TwCenMT-Regular";
-	color:rgba(51,51,51,1);
-	line-height:0.40rem;
-}
 
 
 
