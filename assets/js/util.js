@@ -353,6 +353,7 @@ $(function(){
 		$(".pcView").hide();
 	} else {
 		$("body").addClass("pc");
+		$('.mView').hide();
 	}
 	
 	window.addEventListener("orientationchange", function(event) {
