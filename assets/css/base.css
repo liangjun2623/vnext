@@ -1433,3 +1433,293 @@ html,body {
 html body.pace-done #root .mView{
 	display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*头部导航栏*/
+.headerBox .navBox {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:20;
+	width:100%;
+	height:.6rem;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-align:end;
+	-webkit-align-items:flex-end;
+	-ms-flex-align:end;
+	align-items:flex-end;
+}
+.headerBox .navBox .eleft {
+	margin-left:2.17rem;
+	height:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:end;
+	-webkit-align-items:center;
+	-ms-flex-align:end;
+	align-items:center;
+}
+.headerBox .navBox .eleft .logobox {
+	width:.42rem;
+	height:.42rem;
+}
+.headerBox .navBox .eleft .logobox img{
+	height: 100%;
+	width: auto;
+}
+.headerBox .navBox .eleft .logotextbox {
+	position:relative;
+  margin-left: .20rem;
+  width: 1.84rem;
+  height: .23rem;
+}
+.headerBox .navBox .eleft .logotextbox img{
+	display: none;
+	
+}
+.headerBox .navBox .eleft .logotextbox .black{
+	display: block;
+	height: 100%;
+	width: auto;
+}
+.headerBox .navBox .eright {
+	margin-right:2.19rem;
+	height:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:end;
+	-webkit-align-items:center;
+	-ms-flex-align:end;
+	align-items:center;
+	color:#333333;
+	font-size:.18rem;
+	font-family:"beatles";
+}
+.headerBox .navBox .eright div {
+	margin-left:.95rem;
+	cursor:pointer;
+	font-family:"beatles";
+	letter-spacing:.15em;
+	font-weight:200;
+}
+.headerBox .navBox .eright div:hover{
+	color: #009857;
+}
+.headerBox .navBox .eright div.active{
+	color: #009857;
+}
+.headerBox .navBox .eright div.langChange {
+	position:relative;
+}
+.headerBox .navBox .eright div.langChange .langBox {
+	display:none;
+	text-align:center;
+	position:absolute;
+	width:100%;
+}
+.headerBox .navBox .eright div.langChange .langBox p {
+	margin-top:.12rem;
+	color:#fff;
+}
+.headerBox .navBox .eright div.langChange .langBox p:hover {
+	color:#008f2e;
+}
+.headerBox .navBox .eright div.langChange:hover .langBox {
+	display:block;
+}
+
+.mobile .headerBox .navBox{
+	height: 0.9rem;
+}
+.mobile .headerBox {
+	height:auto;
+}
+.mobile .headerBox .navBox .eleft {
+	margin-left:0.3rem;
+}
+.mobile .headerBox .navBox .eright {
+	margin-right:0.3rem;
+	font-size:.2rem;
+	font-weight:200;
+	line-height:.2rem;
+	height: 100%;
+}
+.mobile .headerBox .navBox .eright span{
+	height: 100%;
+  align-items: center;
+  display: flex;
+}
+.mobile .headerBox .navBox .eright img{
+	height: 0.34rem;
+	width: 0.48rem;
+}
+.mobile .headerBox .navBox .eright .sub{
+	display: none;
+}
+.mobile .headerBox .navBox .sub.active{
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #ffffff;
+	margin: 0;
+	padding: 0;
+	z-index: 9999;
+	animation:subMenu 0.2s;
+}
+@keyframes subMenu{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.mobile .headerBox .navBox .sub span{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.4rem;
+	height: 0.4rem;
+	width: 0.4rem;
+	display: block;
+}
+.mobile .headerBox .navBox .sub span img{
+	height: 100%;
+	width: 100%;
+}
+.mobile .headerBox .navBox .sub ul{
+	width: 100%;
+	height: 100%;
+	padding-top: 2.9rem;
+	box-sizing: border-box;
+}
+.mobile .headerBox .navBox .sub ul li{
+	text-align: center;
+	padding: 0.4rem 0;
+	font-size:0.40rem;
+	font-family:"TwCenMT-Regular";
+	color:rgba(51,51,51,1);
+	line-height:0.40rem;
+}
+
+
+/*footer*/
+/*footer*/
+.contactBox {
+	background:#fff;
+	width:100%;
+	padding: 0.23rem 2.2rem;
+	box-sizing: border-box;
+	height: 0.8rem;
+}
+.contactBox .ct{
+	float: right;
+	line-height: 0.34rem;
+}
+.contactBox .logo{
+	float: left;
+	height: 0.34rem;
+	width: 0.3rem;
+}
+.contactBox .footerText{
+	float: right;
+	margin: 0;
+	color: #333333;
+	font-size: 0.14rem;
+	margin-right: 1.4rem;
+}
+.contactBox .iconBox{
+	margin: 0;
+	float: right;
+}
+.contactBox .iconBox li {
+	display: inline-block;
+	float: left;
+	position:relative;
+	padding-left: 0.4rem;
+	cursor:pointer;
+	color: #898989;
+}
+.contactBox .iconBox li a{
+	color: #898989;
+}
+.contactBox .iconBox li:hover a{
+	color: #009857;
+}
+.contactBox .iconBox li img {
+	object-fit:contain;
+}
+.contactBox .iconBox li.airportIcon .airportQrcode {
+	display:none;
+	opacity:0;
+	position:absolute;
+	top:-1.84rem;
+	left:50%;
+	z-index:10;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:1.64rem;
+	height:1.64rem;
+	box-sizing:border-box;
+	padding:.07rem;
+	background:#fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.15);
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.contactBox .iconBox li.airportIcon:hover .airportQrcode {
+	display:block;
+	opacity:1;
+}
+.mobile .contactBox{
+    width: 100%;
+    box-sizing: border-box;
+    height: 1.4rem;
+    padding: 0;
+}
+.mobile .contactBox .logo{
+	display: none;
+}
+.mobile .contactBox .iconBox{
+	float: none;
+	width: 100%;
+}
+.mobile .contactBox .ct{
+	float: none;
+	width: 100%;
+	padding: 0.1rem 0 0.2rem;
+}
+.mobile .contactBox .iconBox li{
+	width: 16.6%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.mobile .contactBox .footerText {
+    float: none;
+    margin: 0;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #898989;
+}

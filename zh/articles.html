@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>InWe社区</title>
+  <meta name="renderer" content="webkit" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="./static/logo.png">
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/hugeBox.css" />
+  <script type="text/javascript" src="../assets/js/jquery.min.js" ></script>
+  <script type="text/javascript" src="../assets/js/util.js" ></script>
+</head>
+<body class="pace-done">
+<div id="root">
+  <div class="container m-container e-articles" id="e-articles">
+    <div class="headerBox">
+      <script src="../template/top.js"></script>
+    </div>
+    
+    <div class="cont">
+    	<h1></h1>
+    	<div class="input">
+    		<input type="text" />
+    	</div>
+    	<ul class="keyWords">
+    		<li>标签1</li>
+    		<li>标签2标签2</li>
+    		<li>标签3</li>
+    		<li>标签4标签4</li>
+    		<li>标签5标签5</li>
+    		<li>标签6标签6</li>
+    		<li>标签7</li>
+    		<li>标签8标签8</li>
+    		<li>标签9</li>
+    		<li>标签0</li>
+    	</ul>
+    	
+    	
+    	
+    	
+    	<ul class="pagination">
+			  <li class="disabled">
+			    <span>«</span></li>
+			  <li class="active">
+			    <span>1</span></li>
+			  <li>
+			    <a href=" ">2</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=3">3</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=4">4</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=5">5</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=6">6</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=7">7</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=8">8</a></li>
+			  <li class="disabled">
+			    <span>...</span></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=51">51</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=52">52</a></li>
+			  <li>
+			    <a href="http://inwecrypto.view/zh/article?page=2" rel="next">»</a></li>
+			</ul>
+    </div>
+    
+    <script src="../template/footer.js"></script>
+    
+  </div>
+</div>
+
+
+<script>
+	
+	
+	
+	
+	$(function(){
+		pageScrollMover();
+	
+		setTimeout(() => {
+	      pageScrollFun();
+	  },1000);
+	  
+	  
+	})
+	
+	
+  
+  
+  function pageScrollMover(){
+      const pageBox = document.getElementById("e-hugeBox");
+      parent.addEventListener("scroll", this.pageScrollFun)
+  }
+  function pageScrollFun(){
+      var showBoxList = document.getElementsByClassName("showFlowBox");
+      var winHei = document.documentElement.clientHeight;
+      for(var i = 0; i < showBoxList.length; i++){
+          var boxDom = showBoxList[i];
+          if(boxDom.getBoundingClientRect().top < winHei - 100){
+              $(boxDom).addClass("showTogger");
+          }else if(boxDom.getBoundingClientRect().top > winHei - 100){
+              $(boxDom).removeClass("showTogger")
+          }
+      }
+  }
+  
+  
+</script>
+</body>
+</html>
