@@ -1680,6 +1680,7 @@ html body.pace-done #root .mView{
 	position:absolute;
 	top:-1.84rem;
 	left:50%;
+	margin-left: 0.2rem;
 	z-index:10;
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);

@@ -27,7 +27,10 @@ body {
     background: #F7F7F7;
     overflow: hidden;
   }
-  .e-hugeDownIosBox .headerBox .navBox {
+  .e-hugeDownIosBox .headerBox .navBox{
+  	background: #f7f7f7;
+  }
+  /*.e-hugeDownIosBox .headerBox .navBox {
     margin-top: .22rem;
     height: .5rem;
     display: flex;
@@ -78,7 +81,7 @@ body {
   }
   .e-hugeDownIosBox .headerBox .navBox .eright div.langChange:hover .langBox {
     display: block;
-  }
+  }*/
   .e-hugeDownIosBox .headerBox .mess1 {
     margin-top: 1.72rem;
     text-align: center;
@@ -169,7 +172,7 @@ body {
   .e-hugeDownIosBox #openApp .mmess2 {
     margin-top: .41rem;
   }
-  .e-hugeDownIosBox .contactBox {
+  /*.e-hugeDownIosBox .contactBox {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -225,18 +228,18 @@ body {
     margin-bottom: .24rem;
     text-align: center;
     font-size: .14rem;
-  }
+  }*/
   .mobile .e-hugeDownIosBox .imgCover1 {
     top: 2.3rem;
   }
-  .mobile .e-hugeDownIosBox .headerBox .navBox {
+  /*.mobile .e-hugeDownIosBox .headerBox .navBox {
     justify-content: center;
   }
   .mobile .e-hugeDownIosBox .headerBox .navBox .eleft {
     margin-left: 0;
-  }
+  }*/
   .mobile .e-hugeDownIosBox .headerBox .mess1 {
-    margin-top: .84rem;
+    margin-top: 1.5rem;
   }
   .mobile .e-hugeDownIosBox .headerBox .mess3 {
     margin-bottom: .3rem;
@@ -312,7 +315,7 @@ body {
   .mobile .e-hugeDownIosBox #openApp .mmess1 {
     margin-top: .72rem;
   }
-  .mobile .e-hugeDownIosBox .contactBox .titlev {
+  /*.mobile .e-hugeDownIosBox .contactBox .titlev {
     margin-top: .37rem;
-  }
+  }*/
   
