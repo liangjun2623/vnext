@@ -41,15 +41,18 @@ body {
 }
 .content .page .box .right a.weiboIcon:hover{
     background: url("../images/detail/web.png") no-repeat center center;
+    background-size: .15rem .15rem;
 }
 .content .page .box .right a.airportIcon:hover{
     background: url("../images/detail/telegram.png") no-repeat center center;
 }
 .content .page .box .right a.twitterIcon:hover{
     background: url("../images/detail/Twitter.png") no-repeat center center;
+    background-size: .15rem .15rem;
 }
 .content .page .box .right a.qqIcon:hover{
     background: url("../images/detail/qq.png") no-repeat center center;
+    background-size: .14rem .15rem;
 }
 .content .page .box .right a.weixinIcon:hover{
     background: url("../images/detail/wechat.png") no-repeat center center;
@@ -58,35 +61,42 @@ body {
     width: .27rem;
     height: .2rem;
     background: url("../images/detail/web5.png") no-repeat center center;
+    background-size: .15rem .13rem; 
 }
 .content .page .box .right a.airportIcon{
     width: .25rem;
     height: .2rem;
     background: url("../images/detail/telegram5.png") no-repeat center center;
+    background-size: .15rem .12rem;
 }
 .content .page .box .right a.twitterIcon{
     width: .25rem;
     height: .2rem;
     background: url("../images/detail/Twitter5.png") no-repeat center center;
+    background-size: .15rem .12rem;
 }
 .content .page .box .right a.qqIcon{
     width: .25rem;
     height: .2rem;
     background: url("../images/detail/qq5.png") no-repeat center center;
+    background-size: .11rem .14rem;
 }
 .content .page .box .right a.weixinIcon{
     width: .25rem;
     height: .2rem;
     background: url("../images/detail/wechat5.png") no-repeat center center;
+    background-size: .25rem .2rem;
 }
 .content .page .article{
     margin: .43rem 0 .59rem 0;
     font-family: "PingFangSC-Regular";
+    word-break: break-word;
 }
-.content .page p{
+.content .page footer p{
     color: #009857;
-    line-break: .16rem;
-    height: .16rem;
+    line-height: .36rem;
+    height: .36rem;
+    font-size: .16rem;
     font-family: "PingFangSC-Regular";
 }
 .content .page .btn-box{
@@ -107,6 +117,40 @@ body {
     background-color: #FFF;
     color: #009857;
 }
+.content .headerBox .navBox .eright .langChange .langBox p{
+    color: #000;
+}
+.content .headerBox .navBox .eright .langChange .langBox p.active{
+    color: #009857;
+}
+
+.content .headerBox .navBox.green{
+    background-color: #009857; 
+    height: .7rem;
+}
+.content .headerBox .navBox.green .eright{
+    color: #FFF;
+}
+.content .headerBox .navBox.green .eright>div:hover{
+    color: #FFF;
+}
+.content .headerBox .navBox.green .eleft div{
+    display: none;
+}
+.content .headerBox .navBox.green .eleft{
+    width:2.42rem;
+    color: #FFF;
+    background: url('../images/detail/logo_Navigation_bar.png') no-repeat left center;
+    background-size: 2.42rem .42rem;
+}
+.pc .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .8rem;
+    width: 100%;
+    background-color: #F9F9F9;
+}
 .mobile .content {
     margin: 1.57rem .43rem 0rem 0.5rem;
 }
@@ -120,3 +164,4 @@ body {
 .mobile .content .page .box{
     margin-top: .28rem;
 }
+
