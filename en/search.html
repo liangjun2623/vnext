@@ -12,35 +12,35 @@
   <script type="text/javascript" src="../assets/js/jquery.min.js" ></script>
   <script type="text/javascript" src="../assets/js/util.js" ></script>
 </head>
+<style>
+	.headerBox .navBox{
+		background:rgba(247,247,247,1);
+		height: 0.7rem;
+	}
+	.headerBox .navBox input{
+		width:4.45rem;
+		height:0.48rem; 
+		background:rgba(255,255,255,1);
+		border: solid 1px #D2D2D2;
+		margin-left: 0.2rem;
+		padding: 0 0.1rem;
+		box-sizing: border-box;
+		box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.1);
+	}
+	.cont{
+		padding-top: 1.3rem;
+	}
+</style>
 <body class="pace-done">
   <div class="headerBox">
-    <script src="../template/top.js"></script>
+    <script src="../template/top-en.js"></script>
   </div>
   
   <div class="cont">
-  	<h1 class="hidden" title="inwecrypto"> inwecrypto </h1>
-		<img class="title" src="../assets/images/logo_search.png" alt="" />
-  	<div class="input">
-  		<input type="text" />
-  	</div>
-  	<ul class="keyWords">
-  		<li>标签1</li>
-  		<li>标签2标签2</li>
-  		<li>标签3</li>
-  		<li>标签4标签4</li>
-  		<li>标签5标签5</li>
-  		<li>标签6标签6</li>
-  		<li>标签7</li>
-  		<li>标签8标签8</li>
-  		<li>标签9</li>
-  		<li>标签0</li>
-  	</ul>
-  	
-  	
 		<ul class="articles">
 			<li>
 				<div>
-  				<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
+  				<h2>辣椒水打废了开会山<em>辣椒水打</em>大路公交上令肌肤</h2>
 					<p>2018-03-22 17:27:16</p>
 					<section>原创</section>
 				</div>
@@ -48,50 +48,12 @@
 			<li>
 				<img src="http://imgsrc.baidu.com/imgad/pic/item/8b82b9014a90f6037cb445933312b31bb151edda.jpg" />
 				<div>
-					<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
+					<h2><em>辣椒水打</em>辣椒水打废了开会山大路公交上令肌肤</h2>
 					<p>2018-03-22 17:27:16</p>
 					<section>原创</section>
 				</div>
 			</li>
-			<li>
-				<div>
-  				<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
-			<li>
-				<img src="http://imgsrc.baidu.com/imgad/pic/item/8b82b9014a90f6037cb445933312b31bb151edda.jpg" />
-				<div>
-					<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
-			<li>
-				<div>
-  				<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
-			<li>
-				<img src="http://imgsrc.baidu.com/imgad/pic/item/8b82b9014a90f6037cb445933312b31bb151edda.jpg" />
-				<div>
-					<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
-			<li>
-				<div>
-  				<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
-			<li>
-				<img src="http://imgsrc.baidu.com/imgad/pic/item/8b82b9014a90f6037cb445933312b31bb151edda.jpg" />
-				<div>
-					<h2>辣椒水打废了开会山大路公交上令肌肤</h2>
-					<p>2018-03-22 17:27:16</p>
-				</div>
-			</li>
+			
 		</ul>
 		
 		
@@ -125,7 +87,7 @@
 		</ul>
   </div>
   
-  <a class="join" title="加入InWe讨论组"></a>
+ <!-- <a class="join" title="加入InWe讨论组"></a>-->
   
   <script src="../template/footer.js"></script>
     
@@ -134,16 +96,21 @@
 <script>
 	
 	$(function(){
+		$(".headerBox .navBox .eleft").append('<input class="search" type="text" />')
 		
-		$(".input input").bind("keydown",function(e){
+		$(".headerBox input").val(decodeURIComponent(location.search.replace("?kw=","")));
+		
+		$(".headerBox input").bind("keydown",function(e){
 			var theEvent = e || window.event;
 		　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
 			if (code == 13){
-				console.log($(this).val());
-				location.href="http://127.0.0.1:8020/a-vnextStatic/zh/search.html?kw="+$(this).val();
+				console.log($(".headerBox input").val())
 			}
 		});
-		
+			
+			
+			
+			
 	})
 	
 </script>

@@ -1540,7 +1540,7 @@ html body.pace-done #root .mView{
 }
 .headerBox .navBox .eright div.langChange .langBox p {
 	margin-top:.12rem;
-	color:#fff;
+	color:#333333;
 }
 .headerBox .navBox .eright div.langChange .langBox p:hover {
 	color:#008f2e;
@@ -1573,6 +1573,12 @@ html body.pace-done #root .mView{
 .mobile .headerBox .navBox .eright img{
 	height: 0.34rem;
 	width: 0.48rem;
+}
+.mobile .headerBox .navBox .eright img.black{
+	display: block;
+}
+.mobile .headerBox .navBox .eright img.white{
+	display: none;
 }
 .mobile .headerBox .navBox .eright .sub{
 	display: none;
