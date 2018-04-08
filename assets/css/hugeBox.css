@@ -34,6 +34,9 @@ body,html {
 	height:auto;
 }
 /*导航栏覆盖*/
+.e-hugeBox .headerBox .navBox{
+	background: transparent;
+}
 .e-hugeBox .headerBox .navBox .eright{
 	color:#fff;
 }
@@ -43,11 +46,6 @@ body,html {
 .e-hugeBox .headerBox .navBox .eleft .logotextbox .white{
 	display: block;
 }
-/*
-.e-hugeBox 
-.e-hugeBox 
-.e-hugeBox 
-.e-hugeBox */
 
 
 

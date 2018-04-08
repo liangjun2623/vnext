@@ -1465,6 +1465,7 @@ html body.pace-done #root .mView{
 	-webkit-align-items:flex-end;
 	-ms-flex-align:end;
 	align-items:flex-end;
+	background: #ffffff;
 }
 .headerBox .navBox .eleft {
 	margin-left:2.17rem;
