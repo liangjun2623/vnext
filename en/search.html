@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>InWe社区</title>
+  <meta name="renderer" content="webkit" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="./static/logo.png">
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/articles.css" />
+  <script type="text/javascript" src="../assets/js/jquery.min.js" ></script>
+  <script type="text/javascript" src="../assets/js/util.js" ></script>
+</head>
+<style>
+	.headerBox .navBox{
+		background:rgba(247,247,247,1);
+		height: 0.7rem;
+	}
+	.headerBox .navBox input{
+		width:4.45rem;
+		height:0.48rem; 
+		background:rgba(255,255,255,1);
+		border: solid 1px #D2D2D2;
+		margin-left: 0.2rem;
+		padding: 0 0.1rem;
+		box-sizing: border-box;
+		box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.1);
+	}
+	.cont{
+		padding-top: 1.3rem;
+	}
+</style>
+<body class="pace-done">
+  <div class="headerBox">
+    <script src="../template/top-en.js"></script>
+  </div>
+  
+  <div class="cont">
+		<ul class="articles">
+			<li>
+				<div>
+  				<h2>辣椒水打废了开会山<em>辣椒水打</em>大路公交上令肌肤</h2>
+					<p>2018-03-22 17:27:16</p>
+					<section>原创</section>
+				</div>
+			</li>
+			<li>
+				<img src="http://imgsrc.baidu.com/imgad/pic/item/8b82b9014a90f6037cb445933312b31bb151edda.jpg" />
+				<div>
+					<h2><em>辣椒水打</em>辣椒水打废了开会山大路公交上令肌肤</h2>
+					<p>2018-03-22 17:27:16</p>
+					<section>原创</section>
+				</div>
+			</li>
+			
+		</ul>
+		
+		
+  	<ul class="pagination">
+		  <li class="disabled">
+		    <span class="prev">&nbsp;</span></li>
+		  <li class="active">
+		    <span>1</span></li>
+		  <li>
+		    <a href=" ">2</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=3">3</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=4">4</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=5">5</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=6">6</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=7">7</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=8">8</a></li>
+		  <li class="disabled">
+		    <span>...</span></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=51">51</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=52">52</a></li>
+		  <li>
+		    <a href="http://inwecrypto.view/zh/article?page=2" rel="next" class="next">&nbsp;</a></li>
+		</ul>
+  </div>
+  
+ <!-- <a class="join" title="加入InWe讨论组"></a>-->
+  
+  <script src="../template/footer.js"></script>
+    
+
+
+<script>
+	
+	$(function(){
+		$(".headerBox .navBox .eleft").append('<input class="search" type="text" />')
+		
+		$(".headerBox input").val(decodeURIComponent(location.search.replace("?kw=","")));
+		
+		$(".headerBox input").bind("keydown",function(e){
+			var theEvent = e || window.event;
+		　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+			if (code == 13){
+				console.log($(".headerBox input").val())
+			}
+		});
+			
+			
+			
+			
+	})
+	
+</script>
+</body>
+</html>
