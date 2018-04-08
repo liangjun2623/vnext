@@ -59,6 +59,12 @@ body,html {
 	width:100%;
   background: #2E2E2E;
 }
+.mobile .headerBox .navBox .eright img.black{
+	display: none;
+}
+.mobile .headerBox .navBox .eright img.white{
+	display: block;
+}
 .e-hugeBox .headerBox .inweTextImg {
 	position:absolute;
 	left:.75rem;
