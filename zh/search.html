@@ -15,6 +15,8 @@
   <meta name="x5-fullscreen" content="true">
   <meta name="x5-page-mode" content="app">
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="keywords" content="InWeCrypto-社区"/>
+  <meta name="description" content="InWe-社区各类咨询"/>
   
   <!--  twitter -->
 	<meta property="twitter:card" content="summary" />
@@ -29,7 +31,7 @@
   <meta property="og:site_name" content="inwecrypto">
   <meta property="og:title" content="InWeCrypto-社区"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:url" content="/articles.html"/>
+  <meta property="og:url" content="http://testnet.inwecrypto.com/zh/search.html"/>
 	<meta property="og:image" content="../assets/images/eicon1.png"/>
   <meta property="og:description" content="InWe-社区各类咨询"/>
   <!-- End -->
@@ -45,15 +47,18 @@
 		background:rgba(247,247,247,1);
 		height: 0.7rem;
 	}
-	.headerBox .navBox input{
-		width:4.45rem;
-		height:0.48rem; 
-		background:rgba(255,255,255,1);
-		border: solid 1px #D2D2D2;
-		margin-left: 0.2rem;
-		padding: 0 0.1rem;
-		box-sizing: border-box;
-		box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.1);
+	.headerBox .navBox input.search {
+    width: 4.45rem;
+    height: 0.48rem;
+    background: rgba(255,255,255,1);
+    border: solid 1px #D2D2D2;
+    margin-left: 0.2rem;
+    padding: 0 0.1rem;
+    outline:none;
+    box-sizing: border-box;
+	}
+	.headerBox .navBox input.search:focus{
+		border: solid 1px #EB6106;
 	}
 	.cont{
 		padding-top: 1.3rem;
@@ -61,6 +66,7 @@
 	body.mobile{
 		padding-bottom: 0rem!important;
 	}
+	
 </style>
 <body class="pace-done">
   <div class="headerBox">
@@ -139,7 +145,7 @@
 <script>
 	
 	$(function(){
-		$(".headerBox .navBox .eleft").append('<input class="search" type="text" />')
+		$(".headerBox .navBox .eleft").append('<input class="search" type="text" />');
 		
 		$(".headerBox input").val(decodeURIComponent(location.search.replace("?kw=","")));
 		$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));
