@@ -41,7 +41,7 @@ html,body{
 	box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.22);
 }
 .cont .keyWords{
-	height: 0.75rem;
+	height: 0.8rem;
 	width: 100%;
 	margin: 0.5rem 0;
 	overflow: hidden;
@@ -68,7 +68,7 @@ html,body{
 .cont .keyWords li:hover{
 	background:rgba(0,152,87,1);
 	color:#ffffff;
-	box-shadow:0.04rem 0.01rem 0.1rem rgba(0,152,87,0.55) 
+	box-shadow:0.005rem 0.02rem 0.1rem rgba(0,152,87,0.45);
 }
 .cont .keyWords li:hover a{
 	color:#ffffff;
@@ -150,7 +150,8 @@ html,body{
 	color: #009857;
 	text-decoration: underline;
 }
-.cont .pagination li.active a{
+.cont .pagination li.active a,
+.cont .pagination li.active span{
 	color: #009857;
 }
 .cont .pagination li:first-child span,
@@ -159,6 +160,7 @@ html,body{
 	height: 100%;
 	display: inline-block;
 	margin-right: 0.1rem;
+	color: transparent;
 	background: transparent url(../images/page-left.png) no-repeat center / 0.07rem auto;
 }
 .cont .pagination li:first-child a:hover{
@@ -168,6 +170,7 @@ html,body{
 .cont .pagination li:last-child a{
 	height: 100%;
 	width: 0.25rem;
+	color: transparent;
 	margin-left: 0.1rem;
 	display: inline-block;
 	background: transparent url(../images/page-right.png) no-repeat center / 0.07rem auto;

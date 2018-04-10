@@ -32,7 +32,7 @@ document.writeln("  ");
 document.writeln("  <div class=\'eright pcView\'>");
 document.writeln("    <div onClick=" + "location.href=" + "'../zh/index.html' class=\'active\'>主页</div>");
 document.writeln("    <div onClick=" + "location.href=" + "'../zh/download.html'>下载</div>");
-document.writeln("    <div>联系我们</div>");
+document.writeln("    <div class=\'contact\'>联系我们</div>");
 document.writeln("    <div class=\'langChange\'>语言");
 document.writeln("      <span class=\'langBox\'>");
 document.writeln("        <p onClick=" + "location.href=" + "'../en/" + pathname + "'>ENGLISH</p>");

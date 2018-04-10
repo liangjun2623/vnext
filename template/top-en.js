@@ -32,7 +32,7 @@ document.writeln("  ");
 document.writeln("  <div class=\'eright pcView\'>");
 document.writeln("    <div onClick=" + "location.href=" + "'../en/index.html' class=\'active\'>HOME</div>");
 document.writeln("    <div onClick=" + "location.href=" + "'../en/download.html'>DOWNLOAD</div>");
-document.writeln("    <div >CONTACT</div>");
+document.writeln("    <div  class=\'contact\'>CONTACT</div>");
 document.writeln("    <div class=\'langChange\'>LANGUAGE");
 document.writeln("      <span class=\'langBox\'>");
 document.writeln("        <p onClick=" + "location.href=" + "'../en/" + pathname + "'>ENGLISH</p>");

@@ -363,7 +363,9 @@ $(function(){
 	$(".navBox .openMenu").bind("click",function(){
 		$(".navBox .sub").addClass("active");
 	})
-	
+	$(".navBox .contact").click(function(e){
+  	toPosition("contactBox",e);
+  })
 	
 	window.addEventListener("orientationchange", function(event) {
 	    if (window.orientation == 180 || window.orientation == 0) {
