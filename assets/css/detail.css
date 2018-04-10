@@ -1,14 +1,27 @@
 body {
     padding: 0 !important;
+    min-width: 800px;
+}
+
+.globalFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+}
+.globalFooter .contactBox{
+    min-width: 754px;
 }
 .content {
-    margin:1.38rem 5.74rem 0rem 5.7rem;
+    width: 100%;
+    height: 100%;
 }
 .content .page{
-    width: 100%;
-    height: 16rem;
+    margin:1.38rem 5.74rem 0rem 5.7rem;
     font-family: "PingFangSC-Regular";
-    overflow-y: scroll;
 }
 .content .page img{
     margin: .44rem auto .43rem auto;
@@ -96,7 +109,7 @@ body {
 .content .page .article{
     margin: .43rem 0 .59rem 0;
     word-break: break-word;
-   
+   margin-bottom: 4rem;
 }
 .content .page .article p{
     margin: .18rem 0;
@@ -105,17 +118,21 @@ body {
     height: auto;
     font-family: "PingFangSC-Regular";
 }
-.content .page footer p{
+.content footer{
+    margin: .99rem 5.74rem 0rem 5.7rem;
+    min-width: 316px;
+}
+.content footer p{
     color: #009857;
     line-height: .36rem;
     height: .36rem;
     font-size: .16rem;
     font-family: "PingFangSC-Regular";
 }
-.content .page .btn-box{
+.content .btn-box{
     margin-top: .65rem;
 }
-.content .page .btn-box .btn{
+.content .btn-box .btn{
     margin-left: .3rem;
     display: inline-block;
     padding: .09rem .29rem;
@@ -126,9 +143,13 @@ body {
     cursor: pointer;
     font-family: 'PingFangSC-Regular';
 }
-.content .page .btn-box .btn:hover{
+.content .btn-box .btn:hover{
     background-color: #FFF;
     color: #009857;
+}
+.content .headerBox .navBox{
+    position: fixed;
+    z-index: 10;
 }
 .content .headerBox .navBox .eright .langChange .langBox p{
     color: #000;
@@ -155,11 +176,8 @@ body {
     background: url('../images/detail/logo_Navigation_bar.png') no-repeat left center;
     background-size: 2.42rem .42rem;
 }
-.pc .footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-top: 1.08rem;
+.content .footer{
+    margin-top: .99rem;
     height: .8rem;
     width: 100%;
     background-color: #F9F9F9;
