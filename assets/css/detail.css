@@ -9,7 +9,7 @@ body {
     height: 100%;
 }
 .content .page .title{
-    height: 1em; 
+    height: auto;
     font-size: .24rem;
     font-family: "PingFangSC-Regular";
     color:#333333;
@@ -17,7 +17,7 @@ body {
 }
 .content .page .box{
     margin-top: .17rem;
-    height: .2rem; 
+    height: .2rem;
     font-size: .16rem;
     font-family: "PingFangSC-Regular";
     color:#959595;
@@ -61,7 +61,7 @@ body {
     width: .27rem;
     height: .2rem;
     background: url("../images/detail/web5.png") no-repeat center center;
-    background-size: .15rem .13rem; 
+    background-size: .15rem .13rem;
 }
 .content .page .box .right a.airportIcon{
     width: .25rem;
@@ -106,7 +106,7 @@ body {
     margin-left: .3rem;
     display: inline-block;
     padding: .09rem .29rem;
-    background-color: #009857; 
+    background-color: #009857;
     color: #FFF;
     border: 1px solid #009857;
     border-radius: 4px;
@@ -125,8 +125,7 @@ body {
 }
 
 .content .headerBox .navBox.green{
-    background-color: #009857; 
-    height: .7rem;
+    background-color: #009857;
 }
 .content .headerBox .navBox.green .eright{
     color: #FFF;
@@ -144,9 +143,7 @@ body {
     background-size: 2.42rem .42rem;
 }
 .pc .footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin-top: 1.08rem;
     height: .8rem;
     width: 100%;
     background-color: #F9F9F9;
@@ -159,9 +156,8 @@ body {
     font-family: "PingFang SC";
     font-weight: normal;
     line-height: .42rem;
-    height: .85rem;
+    height: auto;
 }
 .mobile .content .page .box{
     margin-top: .28rem;
 }
-
