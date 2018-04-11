@@ -45,7 +45,7 @@
     <script type="text/javascript" src="../assets/js/util.js"></script>
 </head>
 
-<body class="pc pace-done">
+<body class="pc pace-done page-index">
     <div class="content">
         <div class="headerBox">
             <script src="../template/top.js"></script>
@@ -65,24 +65,89 @@
             </div>
             <div class="article">
                 jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl
+                p> Dropbox 前段时间顺利完成 IPO，这款网盘的便捷操作得到了超过 5 亿用户的支持。不过在国内，只有适 合国内上网环境和符合用户习惯的网盘，才能真正算得上更好用。除了 Dropbox，国内也有一批受众面比较广
+                    的网盘，但要做到增量同步，不是每一款都能做到。
+                </p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <img src="../assets/images/echart_empty.png" alt="">
+                <p> Dropbox 前段时间顺利完成 IPO，这款网盘的便捷操作得到了超过 5 亿用户的支持。不过在国内，只有适 合国内上网环境和符合用户习惯的网盘，才能真正算得上更好用。除了 Dropbox，国内也有一批受众面比较广
+                    的网盘，但要做到增量同步，不是每一款都能做到。
+                </p>
+                p> Dropbox 前段时间顺利完成 IPO，这款网盘的便捷操作得到了超过 5 亿用户的支持。不过在国内，只有适 合国内上网环境和符合用户习惯的网盘，才能真正算得上更好用。除了 Dropbox，国内也有一批受众面比较广
+                    的网盘，但要做到增量同步，不是每一款都能做到。
+                </p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <p>jdksjdksl;kdl;skdsjdjsl;kdl;skld;kslkdlskdlksl;kd;lskdl;sk;ldksl;kdsl;kl</p>
+                <img src="../assets/images/echart_empty.png" alt="">
+                <p> Dropbox 前段时间顺利完成 IPO，这款网盘的便捷操作得到了超过 5 亿用户的支持。不过在国内，只有适 合国内上网环境和符合用户习惯的网盘，才能真正算得上更好用。除了 Dropbox，国内也有一批受众面比较广
+                    的网盘，但要做到增量同步，不是每一款都能做到。
+                </p>
             </div>
         </div>
         <div class="globalFooter">
-                <footer>
-                    <p>
-                        <span class="number">50</span>&nbsp;&nbsp;read
-                    </p>
-                    <div class='btn-box clearfix pcView'>
-                        <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
-                        <span class="btn right" onclick="location.href='./download.html'">Download</span>
-                    </div>
-                </footer>
-                <div class="footer pcView">
-                    <script src="../template/footer.js"></script>
+            <footer>
+                <p>
+                    <span class="number">50</span>&nbsp;&nbsp;read
+                </p>
+                <div class='btn-box clearfix pcView'>
+                    <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
+                    <span class="btn right" onclick="location.href='./download.html'">Download</span>
                 </div>
+            </footer>
+            <div class="footer pcView">
+                <script src="../template/footer.js"></script>
             </div>
+        </div>
     </div>
-</body>
-<script src="../assets/js/share.js"></script>
 
+    <script>
+        var search = function (e) {
+            var theEvent = e || window.event;
+            var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+            if (code == 13) {
+                location.href = "http://127.0.0.1:8020/a-vnextStatic/zh/search.html?kw=" + $(this).val();
+            }
+        }
+
+        $(function () {
+
+            $(".input input").bind("keydown", search);
+
+            $(".kw-ctl").click(function () {
+                $(".kw-ctl").toggleClass("active");
+                $(".keyWords").toggleClass("open");
+            });
+
+            //手机端时
+            if (!IsTouchDevice) {
+                $(".headerBox .navBox .eleft").append('<input class="search" type="text" />');
+                var headInput = $(".headerBox .navBox .eleft .search");
+                // var searchInput = $(".input input");
+                headInput.bind("keydown", search);
+                //		headInput.val(decodeURIComponent(location.search.replace("?kw=","")));
+                headInput.bind("input", function () {
+                    searchInput.val($(this).val());
+                })
+                // searchInput.bind("input", function () {
+                //     headInput.val($(this).val());
+                // });
+                var offsetTop = parseInt($('.page').offset().top) + 100;
+                $(window).scroll(function (e) {
+                    var pageHeight = $('.page')[0].getBoundingClientRect().top;
+                    if (Math.abs(pageHeight) >= offsetTop) {
+                        $(".headerBox .navBox").addClass("active");
+                    } else {
+                        $(".headerBox .navBox").removeClass("active");
+                    }
+                })
+            }
+        })
+    </script>
+    <script src="../assets/js/share.js"></script>
+</body>
 </html>

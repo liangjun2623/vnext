@@ -42,7 +42,7 @@
     <title></title>
 </head>
 
-<body class="pc pace-done" style="margin: 0;">
+<body class="pc pace-done page-index" style="margin: 0;">
     <div class="content">
         <div class="headerBox">
             <script src="../template/top-en.js"></script>
@@ -151,7 +151,49 @@
             </div>
         </div>
     </div>
-</body>
-<script src="../assets/js/share.js"></script>
+    <script>
+        var search = function (e) {
+            var theEvent = e || window.event;
+            var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+            if (code == 13) {
+                location.href = "http://127.0.0.1:8020/a-vnextStatic/zh/search.html?kw=" + $(this).val();
+            }
+        }
 
+        $(function () {
+
+            $(".input input").bind("keydown", search);
+
+            $(".kw-ctl").click(function () {
+                $(".kw-ctl").toggleClass("active");
+                $(".keyWords").toggleClass("open");
+            });
+
+            //手机端时
+            if (!IsTouchDevice) {
+                $(".headerBox .navBox .eleft").append('<input class="search" type="text" />');
+                var headInput = $(".headerBox .navBox .eleft .search");
+                // var searchInput = $(".input input");
+                headInput.bind("keydown", search);
+                //		headInput.val(decodeURIComponent(location.search.replace("?kw=","")));
+                headInput.bind("input", function () {
+                    searchInput.val($(this).val());
+                })
+                // searchInput.bind("input", function () {
+                //     headInput.val($(this).val());
+                // });
+                var offsetTop = parseInt($('.page').offset().top) + 100;
+                $(window).scroll(function (e) {
+                    var pageHeight  = $('.page')[0].getBoundingClientRect().top;
+                    if ( Math.abs(pageHeight) >= offsetTop) {
+                        $(".headerBox .navBox").addClass("active");
+                    } else {
+                        $(".headerBox .navBox").removeClass("active");
+                    }
+                })
+            }
+        })
+    </script>
+    <script src="../assets/js/share.js"></script>
+</body>
 </html>
