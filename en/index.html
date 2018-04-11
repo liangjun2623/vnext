@@ -43,7 +43,7 @@
 	<script type="text/javascript" src="../assets/js/util.js"></script>
 </head>
 
-<body class="pace-done">
+<body class="pace-done page-index">
 	<div class="headerBox">
 		<script src="../template/top-en.js"></script>
 	</div>
@@ -235,26 +235,54 @@
 
 
 	<script>
+	
+//	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));
 
-		$(function () {
 
-			$(".input input").bind("keydown", function (e) {
-				var theEvent = e || window.event;
-				var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-				if (code == 13) {
-					console.log($(this).val());
-					location.href = "search.html?kw=" + $(this).val();
+	var search = function(e){
+		var theEvent = e || window.event;
+	　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+		if (code == 13){
+			location.href="http://127.0.0.1:8020/a-vnextStatic/zh/search.html?kw="+$(this).val();
+		}
+	}
+	
+	$(function(){
+		
+		$(".input input").bind("keydown",search);
+		
+		$(".kw-ctl").click(function(){
+			$(".kw-ctl").toggleClass("active");
+			$(".keyWords").toggleClass("open");
+		});
+		
+		//手机端时
+		if(!IsTouchDevice){
+			$(".headerBox .navBox .eleft").append('<input class="search" type="text" />');
+			var headInput = $(".headerBox .navBox .eleft .search");
+			var searchInput = $(".input input");
+			headInput.bind("keydown",search);
+	//		headInput.val(decodeURIComponent(location.search.replace("?kw=","")));
+			headInput.bind("input",function(){
+				searchInput.val($(this).val());
+			})
+			searchInput.bind("input",function(){
+				headInput.val($(this).val());
+			})
+			var offsetTop = $(".input input").offset().top;
+			$("body").scroll(function(e){
+				if(Math.abs($(".cont")[0].getBoundingClientRect().top) >= offsetTop){
+					$(".headerBox .navBox").addClass("active");
+					$(".cont .keyWords").addClass("active");
+				}else{
+					$(".headerBox .navBox").removeClass("active");
+					$(".cont .keyWords").removeClass("active");
 				}
-			});
-
-			$(".kw-ctl").click(function () {
-				$(".kw-ctl").toggleClass("active");
-				$(".keyWords").toggleClass("open");
-			});
-
-
-		})
-
+			})
+		}
+		
+	})
+	
 	</script>
 </body>
 
